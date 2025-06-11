@@ -143,3 +143,5 @@ It visualizes weekly sales performance and outputs it as a PDF chart.
 Useful for sales monitoring, performance dashboards, and business reports.
 
 **OUTPUT:**
+
+![Image](https://github.com/user-attachments/assets/0253e473-d4f3-4c37-a274-84185846b468)
