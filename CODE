@@ -1,0 +1,26 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Sample dataset
+data = {
+    'Day': ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+    'Sales': [200, 150, 300, 280, 500, 700, 650]
+}
+
+# Create DataFrame
+df = pd.DataFrame(data)
+
+# Optional: use a valid style (or skip for default)
+plt.style.use('ggplot')  # You can also use 'bmh', 'classic', etc.
+
+# Create the plot
+plt.figure(figsize=(10, 6))
+plt.plot(df['Day'], df['Sales'], marker='o', linestyle='-', color='blue')
+plt.title('Weekly Sales Report', fontsize=16)
+plt.xlabel('Day of the Week')
+plt.ylabel('Sales')
+plt.grid(True)
+
+# Save the chart
+plt.savefig("sales_report.pdf")  # Saves in your current working directory
+plt.show()
